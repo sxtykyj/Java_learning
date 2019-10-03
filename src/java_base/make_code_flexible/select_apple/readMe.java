@@ -10,7 +10,7 @@ import java.util.List;
 public class readMe {
 
     /**
-     * 灵活编程1：行为参数化 = 类 + 匿名类 + Lambda
+     * 1. 灵活编程1：行为参数化 = 类 + 匿名类 + Lambda
      * <p>
      *
      * 该例子进一步 -> filterApples适用类型抽象化:
@@ -29,6 +29,26 @@ public class readMe {
      *     }
      *
      *     List<Integer> evenNumbers = filter(numbers, (Integer i) -> i % 2 == 0);
+     *
+     *     2. Java8的Lambda表达式    (T,U) -> R
+     *        1） Predicate<T>   T - > boolean
+     *            定义接口：java.util.function.Predicate<T>
+     *            抽象方法：test（）
+     *            使用方法：Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
+     *                      List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
+     *        2） Consumer<T>    T - > void
+     *            定义接口：java.util.function.Consumer<T>
+     *            抽象方法：accept（）
+     *            使用方法：forEach(
+     *                            Arrays.asList(1, 2, 3, 4, 5), (Integer i) -> System.out.println(i)
+     *                      );
+     *        3) Function<T, R>    T - > R
+     *           定义接口：java.util.function.Function<T, R>
+     *           抽象方法：apply()
+     *           使用方法：List<Integer> l = map(
+     *                                          Arrays.asList("lambda", "in", "action"), (String s) -> s.length()
+     *                                    );
+     *
      */
 
 
