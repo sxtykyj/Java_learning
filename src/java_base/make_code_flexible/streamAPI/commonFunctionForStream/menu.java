@@ -1,4 +1,6 @@
-package java_base.make_code_flexible.streamAPI;
+package java_base.make_code_flexible.streamAPI.commonFunctionForStream;
+
+import java_base.make_code_flexible.streamAPI.commonFunctionForStream.Dish;
 
 import java.util.List;
 

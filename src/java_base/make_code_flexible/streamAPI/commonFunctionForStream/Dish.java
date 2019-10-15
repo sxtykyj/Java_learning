@@ -1,4 +1,7 @@
-package java_base.make_code_flexible.streamAPI;
+package java_base.make_code_flexible.streamAPI.commonFunctionForStream;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Author: yk
@@ -55,9 +58,46 @@ public class Dish {
         return name;
     }
 
+    /**
+     * 菜肴类型枚举
+     */
     public enum Type {
         MEAT,
         FISH,
         OTHER
+    }
+
+    /**
+     * 菜肴卡路里分类枚举
+     */
+    public enum CaloriesLevel {
+        DIET(400),
+        NORMAL(700),
+        FAT(2000);
+
+        int threshold;
+
+        CaloriesLevel(int threshold) {
+            this.threshold = threshold;
+        }
+
+        public static Map<Integer, CaloriesLevel> caloriesLevelMap = new HashMap<>();
+
+        static {
+            for (CaloriesLevel caloriesLevel : CaloriesLevel.values()) {
+                caloriesLevelMap.put(caloriesLevel.threshold, caloriesLevel);
+            }
+        }
+
+        // 按卡路里分类返回菜肴类型
+        public static CaloriesLevel valueOfByLevel(Integer value) {
+            if (value <= DIET.threshold) {
+                return DIET;
+            } else if (value <= NORMAL.threshold) {
+                return NORMAL;
+            } else {
+                return FAT;
+            }
+        }
     }
 }
