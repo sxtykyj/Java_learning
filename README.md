@@ -21,6 +21,10 @@
 #### 2).  [Java8_Stream](https://github.com/sxtykyj/Java_learning/tree/master/src/java_base/make_code_flexible/streamAPI)
 * 获取流： menu.stream()    <多核架构：menu.parallelStream()>
  
-* [流的常用方法](https://github.com/sxtykyj/Java_learning/blob/master/src/java_base/make_code_flexible/streamAPI/selectLowCaloriesDishes.java)
+* [流的常用方法](https://github.com/sxtykyj/Java_learning/blob/master/src/java_base/make_code_flexible/streamAPI/commonFunctionForStream/selectLowCaloriesDishes.java)
+
+* 用流读取数据: Collector学习实现
+   * [Collector学习实现](https://github.com/sxtykyj/Java_learning/blob/master/src/java_base/make_code_flexible/streamAPI/studyForCollectorInterface/caseOne/ToListCollector.java)
+   * [Example_judgePrime](https://github.com/sxtykyj/Java_learning/tree/master/src/java_base/make_code_flexible/streamAPI/studyForCollectorInterface/caseTwo)
  
 #### 3).  [Example_selectApple](https://github.com/sxtykyj/Java_learning/tree/master/src/java_base/make_code_flexible/select_apple)
