@@ -28,3 +28,6 @@
    * [Example_judgePrime](https://github.com/sxtykyj/Java_learning/tree/master/src/java_base/make_code_flexible/streamAPI/studyForCollectorInterface/caseTwo)
  
 #### 3).  [Example_selectApple](https://github.com/sxtykyj/Java_learning/tree/master/src/java_base/make_code_flexible/select_apple)
+
+### 2. [java_concurrency:  Java并发](https://github.com/sxtykyj/Java_learning/tree/master/src/java_concurrency)
+#### 1).  并发相关概念
